@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".logForm">
+    <EditText
+        android:id="@+id/ipAddressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="IP address"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:inputType="textUri" />
+
+    <Button
+        android:id="@+id/btnSecondForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Connect to Sever" />
+
+    <EditText
+        android:id="@+id/userText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="User ID"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:inputType="textUri" />
+
+    <Button
+        android:id="@+id/btnLogForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="User loging" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Message from the Server ..."
+        android:id="@+id/responseText" />
+
+
+
+</LinearLayout>

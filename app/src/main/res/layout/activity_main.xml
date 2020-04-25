@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="org.tensorflow.lite.examples.classification.indoormap.MainActivity" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Item List"
+            android:layout_weight="0.5"
+            android:textSize="10sp"
+            />
+
+        <Button
+            android:id="@+id/btnViewShoppingList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="View My shopping List"
+            android:layout_weight="0.5"
+            android:layout_alignRight="@+id/btnOrder"
+            android:textSize="10sp"
+            />
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Add To Cart Cam"
+            android:layout_weight="0.5"
+            android:layout_alignRight="@+id/btnViewShoppingList"
+            android:textSize="10sp"
+            />
+
+        <EditText
+            android:id="@+id/rackId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Rack Id"
+            android:inputType="textUri"
+            android:layout_weight="0.5"
+            android:layout_alignRight="@+id/btnAddToCart"/>
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:layout_weight="0.5"
+            android:layout_alignRight="@+id/rackId"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/btnNearest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Nearest Item"
+            android:layout_weight="0.5"
+            android:layout_alignRight="@+id/submitButton"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/btnItemRecon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Recommend Item"
+            android:layout_weight="0.5"
+            android:layout_alignRight="@+id/btnNearest"
+            android:textSize="10sp"/>
+        <Button
+            android:id="@+id/btnRecipesRecon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Recipes Item"
+            android:layout_weight="0.5"
+            android:layout_alignRight="@+id/btnItemRecon"
+            android:textSize="10sp"/>
+      <!--  <TextView
+            android:id="@+id/tvItemSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="394dp"
+            android:layout_height="711dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"/>-->
+
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="85"
+        android:orientation="vertical"
+       >
+
+    <GridLayout
+        android:id="@+id/mygrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:columnCount="50"
+        android:rowCount="20"
+        android:background="@android:color/background_light" >
+    </GridLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>
